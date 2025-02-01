@@ -1,38 +1,275 @@
 .robot-container {
+  border: 5px hidden rgb(0, 0, 0);
+  margin: auto;
+  margin-bottom: -50px;
+  padding: auto;
 }
 
 .robot-face-shape {
+  width: 500px;
+  height: 500px;
+  background: gray;
+  border-radius: 10%;
+  margin: auto;
 }
 
 .robot-eye-left {
+  width: 200px;
+  height: 100px;
+  background: radial-gradient(red, white);
+  border-radius: 75px / 50px;
+  position: relative;
+  top: 100px;
+  left: 45px;
 }
 
 .robot-eye-right {
+  width: 200px;
+  height: 100px;
+  background: radial-gradient(#011aff, rgb(0, 0, 0));
+  border-radius: 75px / 50px;
+  position: relative;
+  left: 265px;
 }
 
 .robot-ear-left {
+  width: 200px;
+  aspect-ratio: 2/3;
+  clip-path: ellipse(100% 85% at 100% 50%);
+  background: rgb(153, 149, 149);
+  position: relative;
+  right: 205px;
+  bottom: 450px;
 }
 
 .robot-ear-right {
+  width: 200px;
+  aspect-ratio: 2/3;
+  clip-path: ellipse(100% 85% at 0 50%);
+  background: #928e8f;
+  position: absolute;
+  bottom: 400px;
+  right: 555px;
 }
 
 .robot-nose {
+  width: 75px;
+  height: 125px;
+  background: #088304;
+  margin: auto;
 }
 
 .robot-teeth {
+  width: 300px;
+  height: 125px;
+  background: red;
+  border-radius: 100px / 50px;
+  position: relative;
+  left: 100px;
+  top: 25px;
+  opacity: 50%;
 }
 
-.robot-tooth {
+.robot-tooth-one {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #ffffff;
+  position: absolute;
+  left: 50px;
+  top: 5px;
+}
+
+.robot-tooth-two {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #ffffff;
+  position: absolute;
+  left: 100px;
+  top: 5px;
+}
+
+.robot-tooth-three {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #ffffff;
+  position: absolute;
+  left: 150px;
+  top: 5px;
+}
+
+.robot-tooth-four {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #ffffff;
+  position: absolute;
+  left: 200px;
+  top: 5px;
+}
+
+.robot-tooth-five {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  position: absolute;
+  bottom: 3px;
+  left: 55px;
+}
+
+.robot-tooth-six {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  position: absolute;
+  bottom: 3px;
+  left: 85px;
+}
+
+.robot-tooth-seven {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  position: absolute;
+  bottom: 3px;
+  left: 115px;
+}
+
+.robot-tooth-eight {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  position: absolute;
+  bottom: 3px;
+  left: 145px;
+}
+
+.robot-tooth-nine {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  position: absolute;
+  bottom: 3px;
+  left: 175px;
+}
+
+.robot-tooth-ten {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  position: absolute;
+  bottom: 3px;
+  left: 205px;
+}
+
+.robot-tooth-eleven {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  position: absolute;
+  bottom: 8px;
+  left: 235px;
+}
+
+.robot-tooth-twelve {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  position: absolute;
+  bottom: 8px;
+  left: 25px;
 }
 
 .robot-hair-style {
+  --c: 70px; /* control the curvature (works with percentage) */
+  height: 200px;
+  aspect-ratio: 3/2;
+  /* you can also update the 60%  */
+  mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);
+  background: #b94a0a;
+  width: 500px;
+  position: absolute;
+  bottom: 680px;
 }
 
 .robot-hair-one {
+  --r: 25px; /* radius of circles */
+  height: 320px;
+  aspect-ratio: 1;
+  padding: calc(1.5 * var(--r));
+  background: #e97f02;
+  mask: linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 2 * var(--r))
+      calc(100% - 2 * var(--r)),
+    radial-gradient(farthest-side, #000 97%, #0000) 0 0 / calc(2 * var(--r))
+      calc(2 * var(--r)) round;
+  position: absolute;
 }
 
 .robot-hair-two {
+  /* HTML: <div class="wavy-box"></div> */
+  --s: 20px; /* control the size of the wave */
+  --w: 360px; /* preferred  width */
+
+  width: round(var(--w), 4 * var(--s));
+  aspect-ratio: 1;
+  padding: var(--s);
+  border: var(--s) solid #0000;
+  box-sizing: border-box;
+  background: #cd8c52;
+  border-radius: calc(3.5 * var(--s)); /* for the image */
+  mask: radial-gradient(calc(sqrt(2) * var(--s)), #000 calc(100% - 1px), #0000),
+    conic-gradient(#000 0 0) content-box,
+    radial-gradient(calc(sqrt(2) * var(--s)), #0000 100%, #000 calc(100% + 1px))
+      var(--s) var(--s) padding-box;
+  mask-size: calc(var(--s) * 4) calc(var(--s) * 4);
+  position: absolute;
+  left: 100px;
+  bottom: 2px;
 }
 
 .robot-hair-three {
+  --s: 44px; /* size of the wave */
+  --b: 16px; /* thickness of the line */
+  --m: 0.4; /* curvature of the wave [0 2] */
+
+  background: #b8b6b2;
+  --R: calc(var(--s) * sqrt(var(--m) * var(--m) + 1) + var(--b) / 2);
+  width: calc(2 * var(--R));
+  min-height: 250px;
+  --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
+  mask: radial-gradient(
+        var(--R) at top 50% right calc(-1 * var(--m) * var(--s)),
+        var(--_g)
+      )
+      calc(50% - var(--s) / 2 - var(--b) / 2) calc(50% - 2 * var(--s)) /
+      calc(var(--s) + var(--b)) calc(4 * var(--s)) repeat-y,
+    radial-gradient(
+        var(--R) at top 50% left calc(-1 * var(--m) * var(--s)),
+        var(--_g)
+      )
+      calc(50% + var(--s) / 2 + var(--b) / 2) 50% / calc(var(--s) + var(--b))
+      calc(4 * var(--s)) repeat-y;
+  position: relative;
 }
