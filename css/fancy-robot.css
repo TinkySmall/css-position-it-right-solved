@@ -1,13 +1,13 @@
 .robot-container {
   border: 5px hidden rgb(0, 0, 0);
   margin: auto;
-  margin-bottom: -50px;
+  margin-top: 275px;
   padding: auto;
 }
 
 .robot-face-shape {
-  width: 500px;
-  height: 500px;
+  width: 31.25rem;
+  height: 31.25rem;
   background: gray;
   border-radius: 10%;
   margin: auto;
@@ -36,25 +36,25 @@
   width: 200px;
   aspect-ratio: 2/3;
   clip-path: ellipse(100% 85% at 100% 50%);
-  background: rgb(153, 149, 149);
+  background-image: url("https://th.bing.com/th/id/R.36c755049231a066e1f41dea9b1ca038?rik=6Svf43GgBaFxqQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fGrey-backgrounds-free-download.jpg&ehk=rqHUZt4Pu3oi1y%2f32QPcFUelNSOXwhzBHZGTubXhXWU%3d&risl=&pid=ImgRaw&r=0");
   position: relative;
-  right: 205px;
-  bottom: 450px;
+  right: 200px;
+  bottom: 435px;
 }
 
 .robot-ear-right {
   width: 200px;
   aspect-ratio: 2/3;
   clip-path: ellipse(100% 85% at 0 50%);
-  background: #928e8f;
-  position: absolute;
-  bottom: 400px;
-  right: 555px;
+  background-image: url("https://th.bing.com/th/id/R.36c755049231a066e1f41dea9b1ca038?rik=6Svf43GgBaFxqQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fGrey-backgrounds-free-download.jpg&ehk=rqHUZt4Pu3oi1y%2f32QPcFUelNSOXwhzBHZGTubXhXWU%3d&risl=&pid=ImgRaw&r=0");
+  position: relative;
+  bottom: 730px;
+  left: 500px;
 }
 
 .robot-nose {
-  width: 75px;
-  height: 125px;
+  width: 7.5%;
+  height: 20%;
   background: #088304;
   margin: auto;
 }
@@ -204,14 +204,14 @@
 
 .robot-hair-style {
   --c: 70px; /* control the curvature (works with percentage) */
-  height: 200px;
+  height: 250px;
   aspect-ratio: 3/2;
   /* you can also update the 60%  */
   mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);
   background: #b94a0a;
   width: 500px;
-  position: absolute;
-  bottom: 680px;
+  position: relative;
+  bottom: 1250px;
 }
 
 .robot-hair-one {
